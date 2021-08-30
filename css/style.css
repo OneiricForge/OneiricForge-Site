@@ -98,6 +98,18 @@ body{
             transform: translateX(-50%) scaleX(1);
   }
 
+#mainText{
+
+    display: flex;
+    justify-content: center;
+}
+
+#mainArrow{
+
+    width: 70px;
+    height: 70px;
+    
+}
 
 
 /*p{
