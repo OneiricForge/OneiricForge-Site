@@ -5,10 +5,21 @@ body{
     box-sizing: border-box;
 }
 
+#mainImage{
+
+    background-image: url("img/OneiricForge.png");
+    min-height: 580px;
+    background-attachment: fixed;
+    background-color: #1b2027;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+}
+
 .header {
 
     overflow: hidden;
-    background-color: transparent;
+    background-color: #1b2027;
     position: fixed; /* Set the navbar to fixed position */
     /*display: inline-flex;*/
     top: 0; /* Position the navbar at the top of the page */
@@ -28,8 +39,8 @@ body{
     width: 80px;
     height: 80px;
     padding: 15px;
-    /*padding-left: 15px;
-    padding-right: 1000px;*/
+    padding-left: 20px;
+    /*padding-right: 1000px;*/
 }
 
 .header img{
@@ -98,17 +109,27 @@ body{
             transform: translateX(-50%) scaleX(1);
   }
 
-#mainText{
+#firstZoneMain{
 
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
 #mainArrow{
 
-    width: 70px;
-    height: 70px;
+    padding-top: 30px;
+    width: 55px;
+    height: 55px;
     
+}
+
+#mainText{
+
+    letter-spacing: 5px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size: 3em;
+
 }
 
 
