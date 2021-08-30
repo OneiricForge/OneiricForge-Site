@@ -11,9 +11,10 @@ body{
     min-height: 580px;
     background-attachment: fixed;
     background-color: #1b2027;
-    background-position: 50% 40%;
+    background-position-x: center;
+    background-position-y: 40%;
     background-repeat: no-repeat;
-    background-size: 40% 40%;
+    background-size: auto 40%;
 }
 
 .header {
