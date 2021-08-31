@@ -2,12 +2,42 @@ let headerButtons = document.getElementsByClassName("headerButton");
 let header = document.getElementById("header");
 var coloredHeader;
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 
 
+window.onload = function() {responsiveMain()};
+window.onresize = function() {resize()};
 
+function responsiveMain(){
+  if(width < 733){
+    document.getElementById("mainImage").style.backgroundSize = "75%";
+    document.getElementById("mainImage").style.backgroundPositionY = "30%";
+    document.getElementById("mainImage").style.minHeight = "400px";
 
+    document.getElementById("menuButton").style.display = "initial";
+    for(let i = 0; i < headerButtons.length; i++){
+      headerButtons[i].style.display = "none";
+    }
+    //console.log("Plus Petit");
+  } else {
+    document.getElementById("mainImage").style.backgroundSize = "auto 40%";
+    document.getElementById("mainImage").style.backgroundPositionY = "40%";
+    document.getElementById("mainImage").style.minHeight = "580px";
 
+    document.getElementById("menuButton").style.display = "none";
+    for(let i = 0; i < headerButtons.length; i++){
+      headerButtons[i].style.display = "initial";
+    }
+    //console.log("Plus Grand");
+  }
+}
 
+function resize(){
+    width = window.innerWidth;
+    height = window.innerHeight;
+    responsiveMain()
+}
 
   /*window.onscroll = function() {scrollFunction()};
 
