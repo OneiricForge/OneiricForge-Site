@@ -1,5 +1,6 @@
 let headerButtons = document.getElementsByClassName("headerButton");
 let header = document.getElementById("header");
+let Lorem = "";
 var coloredHeader;
 
 let width = window.innerWidth;
@@ -10,10 +11,12 @@ window.onload = function() {responsiveMain()};
 window.onresize = function() {resize()};
 
 function responsiveMain(){
+  Lorem = document.getElementById("LoremText").innerHTML.toString();
   if(width < 733){
     document.getElementById("mainImage").style.backgroundSize = "75%";
     document.getElementById("mainImage").style.backgroundPositionY = "30%";
     document.getElementById("mainImage").style.minHeight = "400px";
+    document.getElementById("mainText").style.fontSize = "1.3em";
 
     document.getElementById("menuButton").style.display = "initial";
     for(let i = 0; i < headerButtons.length; i++){
@@ -24,6 +27,7 @@ function responsiveMain(){
     document.getElementById("mainImage").style.backgroundSize = "auto 40%";
     document.getElementById("mainImage").style.backgroundPositionY = "40%";
     document.getElementById("mainImage").style.minHeight = "580px";
+    document.getElementById("mainText").style.fontSize = "3em";
 
     document.getElementById("menuButton").style.display = "none";
     for(let i = 0; i < headerButtons.length; i++){
@@ -37,6 +41,14 @@ function resize(){
     width = window.innerWidth;
     height = window.innerHeight;
     responsiveMain()
+}
+
+function ShowLorem(){
+  document.getElementById("LoremText").innerHTML = Lorem;
+}
+
+function HideLorem(){
+  document.getElementById("LoremText").innerHTML = "";
 }
 
   /*window.onscroll = function() {scrollFunction()};
