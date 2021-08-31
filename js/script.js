@@ -17,7 +17,8 @@ function responsiveMain(){
     document.getElementById("mainImage").style.backgroundPositionY = "30%";
     document.getElementById("mainImage").style.minHeight = "400px";
     document.getElementById("mainText").style.fontSize = "1.3em";
-
+    
+    document.getElementById("Copyright").style.fontSize = "0.5em";
     document.getElementById("menuButton").style.display = "initial";
     for(let i = 0; i < headerButtons.length; i++){
       headerButtons[i].style.display = "none";
@@ -29,6 +30,7 @@ function responsiveMain(){
     document.getElementById("mainImage").style.minHeight = "580px";
     document.getElementById("mainText").style.fontSize = "3em";
 
+    document.getElementById("Copyright").style.fontSize = "0.8em";
     document.getElementById("menuButton").style.display = "none";
     for(let i = 0; i < headerButtons.length; i++){
       headerButtons[i].style.display = "initial";
