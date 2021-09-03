@@ -168,10 +168,15 @@ body{
     color: #aaaaaa;
     display: block;
     transition: 0.3s;
+    /*background-color: teal;*/
   }
   
   .sideHeader a:hover {
     color: #fff;
+  }
+
+  .sideHeader a.sideHeaderButton{
+      padding-top: 50px;
   }
   
   .sideHeader .closebtn {
@@ -180,6 +185,8 @@ body{
     right: 33px;
     font-size: 36px;
     margin-left: 50px;
+    padding-bottom: 50px;
+    /*background-color: brown;*/
   }
   
   @media screen and (max-height: 450px) {
