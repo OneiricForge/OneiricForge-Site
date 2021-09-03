@@ -10,11 +10,12 @@ body{
     background-image: url("img/OneiricForge.png");
     min-height: 580px;
     background-attachment: fixed;
-    background-color: #1b2027;
+    background-color: transparent;
     background-position-x: center;
     background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: auto 40%;
+
     /*background-size: 75%;*/
 }
 
@@ -23,11 +24,13 @@ body{
 
     overflow: hidden;
     background-color: #1b2027;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed;
     /*display: inline-flex;*/
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0;
     width: 100%;
-    transition: background-color 0.5s;
+    /*border-color: #1b2027 #1b2027 white #1b2027;
+    border-style: solid;*/
+
 
     /*display: flex;
     background: #555;
@@ -103,11 +106,41 @@ body{
     transition: -webkit-transform 250ms;
     transition: transform 250ms;
     transition: transform 250ms, -webkit-transform 250ms;
-  }
-  .header div#headerLinks a.headerButton:hover::after {
+}
+  
+.header div#headerLinks a.headerButton:hover::after {
     -webkit-transform: translateX(-50%) scaleX(1);
             transform: translateX(-50%) scaleX(1);
-  }
+}
+
+#main{
+    background: linear-gradient(to right, #2C5460, #5CB6C9);
+}
+
+#mainDiv{
+    padding-top: 200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: #262B32;
+    border-radius: 20px;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 24px 38px rgba(0, 0, 0, 0.14);
+    height: 1869px;
+    width: 90%;
+}
+
+
+
+#Copyright{
+    color: white;
+    padding: 0px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+}
+
 
 #firstZoneMain{
 
@@ -132,22 +165,8 @@ body{
     text-decoration: none;
     font-size: 3em;
     color: white;
+    padding-bottom: 50px;
 
-}
-
-#main{
-    background: linear-gradient(to right, #2C5460, #5CB6C9);
-}
-
-
-
-#Copyright{
-    color: white;
-    padding: 0px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.8em;
 }
 /*p{
     display: none;

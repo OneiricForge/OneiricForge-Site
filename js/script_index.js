@@ -25,7 +25,7 @@ function responsiveMain(){
     }
     //console.log("Plus Petit");
   } else {
-    document.getElementById("mainImage").style.backgroundSize = "auto 40%";
+    //document.getElementById("mainImage").style.backgroundSize = "auto 40%";
     document.getElementById("mainImage").style.backgroundPositionY = "40%";
     document.getElementById("mainImage").style.minHeight = "580px";
     document.getElementById("mainText").style.fontSize = "3em";
