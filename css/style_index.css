@@ -178,6 +178,8 @@ body{
 
   .sideHeader a.sideHeaderButton{
       padding-top: 50px;
+      outline:none;
+      text-decoration: none;
   }
   
   .sideHeader .closebtn {
