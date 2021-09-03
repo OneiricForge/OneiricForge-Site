@@ -34,3 +34,13 @@ function resize(){
     height = window.innerHeight;
     responsiveMain()
 }
+
+function openNav() {
+  document.getElementById("sideHeader").style.width = "100%";
+  document.getElementById("menuButton").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("sideHeader").style.width = "0";
+  document.getElementById("menuButton").style.display = "initial";
+}

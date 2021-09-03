@@ -74,6 +74,7 @@ body{
     position: relative;
     width: 30px;
     height: 30px;
+    transition: display 0.3s;
 }
 
 .header div#headerLinks a.headerButton{
@@ -140,6 +141,51 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-size: 0.8em;
 }
+
+.sideHeader {
+    right: 0;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(17, 17, 17, 0.98);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    vertical-align: middle;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+  }
+  
+  .sideHeader a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #aaaaaa;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sideHeader a:hover {
+    color: #fff;
+  }
+  
+  .sideHeader .closebtn {
+    position: absolute;
+    top: 27px;
+    right: 33px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sideHeader {padding-top: 15px;}
+    .sideHeader .headerButton {font-size: 18px;}
+  }
 
 
 #firstZoneMain{

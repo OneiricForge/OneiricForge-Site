@@ -12,6 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;357&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="sideHeader" class="sideHeader">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sideHeaderButton" href="index.html"><b>Home</b></a>
+        <a class="sideHeaderButton" href="about_us.html">About Us</a>
+        <a class="sideHeaderButton" href="">Creations</a>
+        <a class="sideHeaderButton" href="">Contact</a>
+      </div>
+
     <div class="header" id="header">
             <a href="#pouet"><img src="css/img/OneiricForge_round.png" id="mainIcon"></a>
         
@@ -20,7 +28,7 @@
                 <a class="headerButton" href="">Creations</a>
                 <a class="headerButton" href="about_us.html">About Us</a>
                 <a class="headerButton" href="index.html"><b>Home</b></a>
-                <a id="menuButton"><img src="css/img/menuButton.png"></a>
+                <a id="menuButton" onclick="openNav()"><img src="css/img/menuButton.png"></a>
             </div>
             
     </div>

@@ -25,7 +25,7 @@ function responsiveMain(){
     }
     //console.log("Plus Petit");
   } else {
-    //document.getElementById("mainImage").style.backgroundSize = "auto 40%";
+    document.getElementById("mainImage").style.backgroundSize = "auto 40%";
     document.getElementById("mainImage").style.backgroundPositionY = "40%";
     document.getElementById("mainImage").style.minHeight = "580px";
     document.getElementById("mainText").style.fontSize = "3em";
@@ -51,6 +51,17 @@ function ShowLorem(){
 
 function HideLorem(){
   document.getElementById("LoremText").innerHTML = "";
+}
+
+
+function openNav() {
+  document.getElementById("sideHeader").style.width = "100%";
+  document.getElementById("menuButton").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("sideHeader").style.width = "0";
+  document.getElementById("menuButton").style.display = "initial";
 }
 
   /*window.onscroll = function() {scrollFunction()};
